@@ -14,14 +14,8 @@ public class ContadorServlet extends HttpServlet{
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException{
 		contador++;
 		PrintWriter out = response.getWriter();
-		out.println("<html>");
-		out.println("<body>");
+		out.println("<html><body>");
 		out.println("Contador é "+contador);
-		out.println("</body>");
-		out.println("</html>");
+		out.println("</body></html>");
 	}
-	
-	
-	
-	
 }
